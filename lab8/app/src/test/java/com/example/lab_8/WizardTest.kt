@@ -50,14 +50,12 @@ class WizardTest {
 
     @Test
     fun enough_mana(){
-        evilWizard.mana = 100
         evilWizard.train()
         assertTrue(4 < evilWizard.mana)
     }
 
     @Test
     fun not_enough(){
-        evilWizard.mana = 0
         evilWizard.train()
         assertTrue(5 > evilWizard.mana)
     }
